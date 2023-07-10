@@ -31,7 +31,7 @@ The list of parameters provided by Octant is as follows.
 | method | discibtion | parameter |
 | :----:| :----: | :----: |
 | predict | Using an algorithm to predict CC| -m -b |
-| ratio | UCC| -m -b |
+| ratio | Analyzing CC ratio in passed test cases| -m -b |
 | remove | Remove test cases from matrix| -m -t |
 | relabel | Change test case label in matrix | -m -t |
 | rank | View buggy line rankings and suspiciousness value| -m -b -f|
