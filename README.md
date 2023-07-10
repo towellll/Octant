@@ -8,7 +8,7 @@ Octant, which analyzes coincidental correctness test cases (CC) for fault locali
   ```pip install requirement.txt```
 
 # II.Overview of Octant
-[The overview of Octant.\label{step}](./overview.png)
+![The overview of Octant.\label{step}](./overview.png)
 
 # III.Use in Command-line 
 
