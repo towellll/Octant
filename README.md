@@ -2,10 +2,15 @@
 A tool for analyzing coincidental correctness test cases and fault localization.
 Octant, which analyzes coincidental correctness test cases (CC) for fault localization. The tool automatically collect information about the test cases of a program and the ratio of CC. With OCTANT, researchers can effectively address the impact of CC by relabeling or removing them. Additionally, OCTANT incorporates a supervised random forest-based CC detection approach along with more than ten fault localization techniques for suspiciousness evaluation.
 
-- Install
+# I.Install
 
-  
+ 
   ```pip install requirement.txt```
+
+# II.Overview of Octant
+[The overview of Octant.\label{step}](./overview.png)
+
+# III.Use in Command-line 
 
 - Parameters
 
@@ -21,7 +26,7 @@ The list of parameters provided by Octant is as follows.
 |    -d     | Destination path to save the output, default is the matrix input directory |           customize and optional           |
 
 
-
+- Methods
 
 | method | discibtion | parameter |
 | :----:| :----: | :----: |
@@ -32,7 +37,5 @@ The list of parameters provided by Octant is as follows.
 | rank | View buggy line rankings and suspiciousness value| -m -b -f|
 | sfl | View all statement rankings and suspiciousness value | -m -b -f |
 
-
-- Overview
 
   
