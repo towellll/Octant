@@ -38,4 +38,28 @@ The list of parameters provided by Octant is as follows.
 | sfl | View all statement rankings and suspiciousness value | -m -b -f |
 
 
+# IV.Octant Usage Example
+
+- Use Octant to analyze the situation of CC in the file.
+
+  ```python main.py locate -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy```
+
   
+- Use Octant to predict the situation of CC in the file.
+
+  ```python main.py predict -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy```
+
+  
+- Use Octant to choose the strategy in coverage matrix.
+
+  ```python main.py remove -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy -t truth```
+
+  
+- Compute suspiciousness value of buggy line.
+
+  ```python main.py rank -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy -f dstar```
+
+  
+- Compute suspiciousness value of all statements.
+
+```python main.py sfl -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy -f dstar```
