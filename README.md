@@ -5,7 +5,9 @@ A tool for analyzing coincidental correctness test cases and fault localization
   ```pip install requirement.txt```
 
 - Usage
-  | parameter |                          discibtion                          |             choice             |
+
+  
+| parameter | description| choice|
 | :-------: | :----------------------------------------------------------: | :----------------------------: |
 |    -m     |             Specify a coverage matrix file path              |           customize            |
 |    -b     |                Specify a buggy line file path                |           customize            |
