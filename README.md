@@ -6,6 +6,8 @@ A tool for analyzing coincidental correctness test cases and fault localization
 
 - Usage
 
+Command-line in python
+
   
 | parameter | description| choice|
 | :-------: | :----------------------------------------------------------: | :----------------------------: |
