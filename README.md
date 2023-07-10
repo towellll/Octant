@@ -22,7 +22,7 @@ The list of parameters provided by Octant is as follows.
 |    -m     |             Specify a coverage matrix file path              |           customize            |
 |    -b     |                Specify a buggy line file path                |           customize            |
 |    -f     |        Choose formula to compute the suspicious value        | suspiciousness compute formula |
-|    -t     |                     Choose cc list type                      |   prediction or ground truth   |
+|    -t     |                     Choose cc list type                      |   prediction or  truth   |
 |    -d     | Destination path to save the output, default is the matrix input directory |           customize and optional           |
 
 
@@ -41,25 +41,32 @@ The list of parameters provided by Octant is as follows.
 # IV.Octant Usage Example
 
 - Use Octant to analyze the situation of CC in the file.
+  You can use this module to analyze the distribution of CC in the file, count the number of successful and failed test cases, and the proportion of CC in successful test cases.
+
 
   ```python main.py locate -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy```
 
   
 - Use Octant to predict the situation of CC in the file.
+  You can use the predict module to predict where CCs are likely to be. Of course, you can also overload this module according to your own method.
 
   ```python main.py predict -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy```
 
   
 - Use Octant to choose the strategy in coverage matrix.
+  Select the strategy of CC change and the method of CC line to use. The strategies include  '-remove' and '-relabel'. In the CC line, '-truth' corresponds to the CC analyzed by the buggy line, and '-prediction' uses the predicted CC line.
 
   ```python main.py remove -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy -t truth```
 
   
 - Compute suspiciousness value of buggy line.
+  Calculate the suspiciousness value and rank of where the bug is located in the file. You can specify the suspicious value calculation formula to use.
+  
 
   ```python main.py rank -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy -f dstar```
 
   
 - Compute suspiciousness value of all statements.
-
-```python main.py sfl -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy -f dstar```
+  Calculate suspiciousness and rank for all statements in the file. You can specify the suspicious value calculation formula to use.
+  
+  ```python main.py sfl -m ~/Documents/OCTANT/d4j/Time/17/matrix.npz -b ~/Documents/OCTANT/d4j/Time/17/bug_pos.npy -f dstar```
