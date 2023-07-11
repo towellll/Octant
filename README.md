@@ -75,3 +75,5 @@ The list of parameters provided by Octant is as follows.
 # V.Code Reuse
 
 Every section in the code can be reused, and you can call the suspicious value analysis module externally or overload some places according to your needs.
+
+In addition, according to the sample input on the bugyy line, different formats can be replaced for input.
